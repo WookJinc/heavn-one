@@ -430,7 +430,7 @@ $(window).on('load', function () {
 
         LottieScrollTrigger({
             target: ".lottie",
-            path: "assets/json/6705298bbfeb48ae73b996e3_data.json",
+            path: "https://wookjinc.github.io/heavn-one/assets/json/6705298bbfeb48ae73b996e3_data.json",
             speed: "medium",
             scrub: 2,
             pin: false,
