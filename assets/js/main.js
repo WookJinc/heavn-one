@@ -161,7 +161,7 @@ $(window).on('load', function () {
                 scrub: true,
                 // markers: true,
                 onUpdate: (e) => {
-                    if (e.progress > 0.9) {
+                    if (e.progress > 0.8) {
                         $(".sc-day .sun-element").css("opacity", 0)
                     } else {
                         $(".sc-day .sun-element").css("opacity", 1)
@@ -430,7 +430,7 @@ $(window).on('load', function () {
 
         LottieScrollTrigger({
             target: ".lottie",
-            path: "/assets/json/6705298bbfeb48ae73b996e3_data.json",
+            path: "../../assets/json/6705298bbfeb48ae73b996e3_data.json",
             speed: "medium",
             scrub: 2,
             pin: false,
