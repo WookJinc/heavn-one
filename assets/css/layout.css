@@ -1,0 +1,107 @@
+@import './reset.css';
+@import './common.css';
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+#header .logo .img-wrapper {
+    width: 20%;
+}
+
+#header .logo img {
+    width: 100%;
+}
+
+#header .util {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #fff;
+}
+
+#header .util::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+#header .util .text {
+    font-size: 14px;
+    line-height: 1;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+    #header {
+        width: 30%;
+        padding: 1% 2%;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        gap: 1vw;
+        border-radius: 14px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    #header .logo {
+        width: 100%;
+    }
+
+    #header .logo .img-wrapper {
+        width: 90%;
+    }
+
+    #header .util {
+        width: 80%;
+        padding: 5% 0;
+        background-color: #fff;
+        color: #000;
+        border-radius: 10px;
+    }
+
+    #header .util::before {
+        display: none;
+    }
+
+    #header .util .text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+        width: 50%;
+        padding: 3%;
+    }
+
+    #header .logo .img-wrapper {
+        width: 95%;
+    }
+
+    #header .util {
+        width: 90%;
+        padding: 5% 2.5%;
+    }
+
+    #header .util .text {
+        font-size: 3.5vw;
+    }
+}

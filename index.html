@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAVN One - The World's brightest desk luminaire.</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.21/dist/lenis.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="preload">
+            <h2 class="blind">preloader</h2>
+            <div class="bg">
+                <img src="./assets/images/preload_bg.avif" alt="preload image">
+            </div>
+            <div class="logo">
+                <img src="./assets/images/preload_logo.avif" alt="preload logo image">
+            </div>
+        </div>
+        <header id="header">
+            <h2 class="blind">header</h2>
+            <a href="#" class="logo">
+                <div class="img-wrapper">
+                    <img src="./assets/images/logo.png" alt="heavn one logo">
+                </div>
+            </a>
+            <a href="#" class="util">
+                <span class="hover-wrap">
+                    <span class="text line line1" data-split='true'>Order now</span>
+                    <span class="text line line2" data-split='true'>Order now</span>
+                </span>
+            </a>
+        </header>
+        <main id="container">
+            <section class="sc-heavn">
+                <div class="sticky">
+                    <picture class="bg">
+                        <source media="(min-width: 768px)" srcset="./assets/images/main_bg.avif">
+                        <source media="(min-width: 320px)" srcset="./assets/images/working_5.avif">
+                        <img src="./assets/images/main_bg.avif" alt="sc-heavn image">
+                    </picture>
+                    <div class="inner heavn_inner">
+                        <h1 class="title">
+                            <span class="text1 text-motion" data-split="true">HEAVN</span>
+                            <span class="text2 text-motion" data-split="true">One</span>
+                        </h1>
+                        <p class="desc text-motion2" data-split="true">
+                            <span class="highlight">The world's brightest desk luminaire.</span>
+                            <br>Scroll to learn more.
+                        </p>
+                        <div class="desc-2 hide">
+                            <p class="text">
+                                <span class="sub">HEAVN One</span>
+                                <span class="highlight">Brightens up your workday,</span>
+                                reduces tiredness and improves
+                                <br> your sleep.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-order-m">
+                <div class="inner">
+                    <h2 class="title">The World's brightest desk luminaire</h2>
+                    <p class="desc">
+                        Brightens up your workday, reduces tiredness and improves your sleep
+                    </p>
+                    <button class="btn-order">
+                        order now
+                    </button>
+                </div>
+            </section>
+            <section class="sc-day">
+                <div class="sun-group">
+                    <div class="sticky">
+                        <h2 class="title">
+                            <div class="top">
+                                <span>Light</span>
+                                <div class="img-wrapper">
+                                    <img src="./assets/images/sun.avif" alt>
+                                </div>
+                                <span>that</span>
+                            </div>
+                            <p class="bottom">feels like sun.</p>
+                        </h2>
+                        <p class="desc">
+                            As the first hybrid of desk and daylight luminaire,
+                            HEAVN One delivers ideal light at anytime of day and
+                            enhances your well-being and performance.
+                        </p>
+                        <div class="sun-element"></div>
+                    </div>
+                </div>
+                <div class="working-group">
+                    <div class="clock">
+                        <div class="sticky">
+                            <div class="clock-wrapper">
+                                <span class="clock-circle"></span>
+                                <div class="list-wrapper">
+                                    <ul class="h1-list">
+                                        <li>0</li>
+                                        <li>0</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>2</li>
+                                        <li>2</li>
+                                        <li>2</li>
+                                        <li>2</li>
+                                    </ul>
+                                    <ul class="h2-list">
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>0</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>0</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                    </ul>
+                                    <ul class="dash-list">
+                                        <li>:</li>
+                                    </ul>
+                                    <ul class="mm-list">
+                                        <li>00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-0">
+                        <div class="automatic-area">
+                            <span>Automatic light adjustment.</span>
+                        </div>
+                        <div class="your-area">
+                            <p>
+                                Your working day
+                                <br>with HEAVN One
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-1">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/working_1.avif" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3>The energy boost <br> in the morning.</h3>
+                            <p>
+                                The full-spectrum daylight lamp that can be switched on at the front is a
+                                real wake-up call. With an effect of up to 10,000 lux, you reactivate your
+                                bodily functions for more vitality, wakefulness and concentration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/working_2.avif" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3>Full light. Full focus</h3>
+                            <p>
+                                The downward desk illumination provides wide-area illumination with
+                                linear, shadow-free light. For effortless work with documents or on the
+                                monitor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/working_3.webp" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3>Sets the scene perfectly.</h3>
+                            <p>
+                                The switchable, frontal light function acts like a soft box and creates a
+                                natural brightening of the area around the face. For a perfect
+                                appearance in video conferences!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/working_4.webp" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3>Outside dark. <br>Inside atmospheric.</h3>
+                            <p>
+                                The indirect light of HEAVN One creates an atmospheric ambience and
+                                eliminates the cave feeling of typical desk lamps.
+                                The comfortable room illumination is easy on the eyes when working on
+                                a monitor and enhances well-being and concentration when it is
+                                already dark outside.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-5">
+                        <div class="img-wrapper">
+                            <img src="./assets/images/working_5.avif" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3>Healthy sleep. <br>Ideal regeneration.</h3>
+                            <p>
+                                In the evening, the light from HEAVN One becomes warmer and
+                                stimulates the production of the sleep hormone melatonin in your body.
+                                The result is healthy sleep - the best foundation for sustainable
+                                performance at work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-revolutionize">
+                <h2 class="title"><span class="highlight">Revolutionize</span> your <br>working day</h2>
+                <div class="lottie-area">
+                    <div class="sticky">
+                        <div class="lottie"></div>
+                        <div class="inner-text text-1">
+                            <span><span class="highlight">Elegant design.</span> <br>For tasetful offices.</span>
+                        </div>
+                        <div class="inner-text text-2">
+                            <span><span class="highlight">3 lights become HEAVN One.</span> <br>Desk lamp. Ceiling
+                                spotlight. Daylight.</span>
+                        </div>
+                        <div class="inner-text text-3">
+                            <span><span class="highlight">lntuitive control.</span> <br>Also by app.</span>
+                        </div>
+                        <div class="inner-text text-4">
+                            <span><span class="highlight">Always a full smartphone battery.</span> <br>With wireless
+                                charging.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-trial">
+                <div class="inner">
+                    <h2 class="title">30 days risk-free trial.</h2>
+                    <div class="order-area">
+                        <span class="sub-title">Get your HEAVN One now.</span>
+                        <p class="desc">
+                            Order HEAVN One in our online store and try it out without any obligation. You can return
+                            the luminaire within 30 days of ordering without giving a reason and receive a full refund.
+                        </p>
+                        <div class="detail">
+                            <div class="row row-1">
+                                <span>Promise</span>
+                                <span>30-day money-back</span>
+                            </div>
+                            <div class="row row-2">
+                                <span>Delivery</span>
+                                <span>3 to 4 days</span>
+                            </div>
+                            <div class="row row-3">
+                                <span>Price</span>
+                                <span>€1290</span>
+                            </div>
+                            <a href="#" class="order-link">
+                                <span class="hover-wrap">
+                                    <span class="text line line1" data-split='true'>Order now</span>
+                                    <span class="text line line2" data-split='true'>Order now</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-recommend">
+                <div class="img-wrapper wrapper-1">
+                    <img src="./assets/images/recommend_1.avif" alt>
+                </div>
+                <div class="text-group">
+                    <div class="inner">
+                        <h2 class="title" data-split="true">
+                            “I recommend anyone who wants to use
+                            their time effectively and increase their
+                            efficiency to test the HEAVN One.”
+                        </h2>
+                        <div class="desc">
+                            <span>Frank Thelen, Investor</span>
+                            <a href="#" class="interview-link">
+                                <span>Read Interview</span>
+                                <img src="./assets/images/arrow_right.png" alt>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-group">
+                    <div class="sticky">
+                        <div class="ani-area">
+                            <div class="foot">
+                                <img src="./assets/images/foot.svg" alt>
+                            </div>
+                            <div class="head">
+                                <img src="./assets/images/head.svg" alt>
+                            </div>
+                            <div class="wipe"></div>
+                            <div class="text-area">
+                                <div class="inner">
+                                    <div class="col-1">
+                                        <span class="title">Technical details</span>
+                                        <p class="desc">
+                                            HEAVN One was developed in close cooperation with
+                                            leading sleep researchers and doctors. A well thought-out
+                                            concept, which is also reflected in the technical data.
+                                        </p>
+                                        <a href="#" class="catalog-link">
+                                            <span class="hover-wrap">
+                                                <span class="text line line1" data-split='true'>Download catalog</span>
+                                                <span class="text line line2" data-split='true'>Download catalog</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="row row-1">
+                                            <span>Dimensions and weight</span>
+                                            <div class="img-wrapper"><img src="./assets/images/ic_plus-white.svg" alt>
+                                            </div>
+                                        </div>
+                                        <div class="row row-2">
+                                            <span>Light characteristics</span>
+                                            <div class="img-wrapper"><img src="./assets/images/ic_plus-white.svg" alt>
+                                            </div>
+                                        </div>
+                                        <div class="row row-3">
+                                            <span>Sensors and options</span>
+                                            <div class="img-wrapper"><img src="./assets/images/ic_plus-white.svg" alt>
+                                            </div>
+                                        </div>
+                                        <div class="row row-4">
+                                            <span>Phys. electrical properties</span>
+                                            <div class="img-wrapper"><img src="./assets/images/ic_plus-white.svg" alt>
+                                            </div>
+                                        </div>
+                                        <div class="row row-5">
+                                            <span>Planning data</span>
+                                            <div class="img-wrapper"><img src="./assets/images/ic_plus-white.svg" alt>
+                                            </div>
+                                        </div>
+                                        <div class="row row-6">
+                                            <span>More</span>
+                                            <div class="img-wrapper"><img src="./assets/images/ic_plus-white.svg" alt>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper wrapper-2">
+                    <img src="./assets/images/recommend_2.avif" alt>
+                </div>
+            </section>
+            <section class="sc-order">
+                <div class="inner">
+                    <div class="text-group">
+                        <h2 class="title">
+                            Order now and test<br>it risk-free for 30 days.
+                        </h2>
+                        <p class="desc">
+                            <span class="highlight">97% of all testers are alreday convinced.</span> Try out HEAVN One
+                            for 30 days without obligation. Order risk-free in our online
+                            shop with our money-back guarantee, if you're not happy.
+                        </p>
+                        <a href="#" class="order-link">
+                            <span class="hover-wrap">
+                                <span class="text line line1" data-split='true'>Order now</span>
+                                <span class="text line line2" data-split='true'>Order now</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="intro-group">
+                        <span>Designed in <span class="highlight">Germany</span></span>
+                        <div class="video-area">
+                            <video class="video" autoplay muted playsinline>
+                                <source src="./assets/images/order_play.mp4" type="video/mp4">
+                            </video>
+                            <button class="btn-video">
+                                <img class="ic-play" src="./assets/images/ic_play.png" alt>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="inner">
+                <div class="top">
+                    <div class="col col-1">
+                        <div class="logo-area">
+                            <img src="./assets/images/logo.png" alt>
+                        </div>
+                        <div class="studio-area">
+                            <span>Website made by</span>
+                            <img src="./assets/images/studio-22_logo.svg" alt>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <span class="title">Products</span>
+                        <a href="#">HEAVN One</a>
+                        <a href="#">HEAVN Pure</a>
+                        <a href="#">Find retailer</a>
+                    </div>
+                    <div class="col col-3">
+                        <span class="title">Company</span>
+                        <a href="#">About us</a>
+                        <a href="#">Light knowledge</a>
+                        <a href="#">Magazine</a>
+                    </div>
+                    <div class="col col-4">
+                        <span class="title">More</span>
+                        <a href="#">Contact</a>
+                        <a href="#">Support</a>
+                        <a href="#">Downloads</a>
+                    </div>
+                    <div class="col col-5">
+                        <span class="title">Subscribe to the newsletter</span>
+                        <form class="form-email" method="post">
+                            <fieldset>
+                                <legend>E-Mail</legend>
+                                <input class="input-email" type="text" placeholder="E-Mail" />
+                                <button class="btn-sign">
+                                    <span>Sign up</span>
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="col-1">
+                        <span class="copyright">© 2024 | HEAVN</span>
+                        <a href="#">Imprint</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Term of Service</a>
+                    </div>
+                    <div class="col-2">
+                        <span class="blind">HEAVN-One SNS Link</span>
+                        <a class="util util-1" href="#">
+                            <img src="./assets/images/link_linkedin.svg" alt=>
+                        </a>
+                        <a class="util util-2" href="#">
+                            <img src="./assets/images/link_instagram.svg" alt=>
+                        </a>
+                        <a class="util util-3" href="#">
+                            <img src="./assets/images/link_facebook.svg" alt=>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

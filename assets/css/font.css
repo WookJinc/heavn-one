@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Montreal Medium';
+    src: url('../font/NeueMontreal-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montreal Regular';
+    src: url('../font/NeueMontreal-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montreal Semibold';
+    src: url('../font/NeueMontreal-SemiBold.otf') format('opentype');
+}

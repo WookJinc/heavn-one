@@ -1,0 +1,44 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.inner {
+    padding: 0 10%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.highlight {
+    color: #fff;
+}
+
+.hover-wrap {
+    display: grid;
+    overflow: hidden;
+}
+
+.hover-wrap .line {
+    grid-area: 1/1;
+}
+
+.hover-wrap .line2 {
+    transform: translateY(100%);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .inner {
+        padding: 0 5%;
+    }
+}
