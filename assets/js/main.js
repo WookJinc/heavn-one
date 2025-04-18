@@ -6,7 +6,7 @@ $(window).on('load', function () {
     gsap.ticker.lagSmoothing(0);
 
     gsap.ticker.add((time) => {
-        lenis.raf(time * 300);
+        lenis.raf(time * 600);
     });
 
     gsap.registerPlugin(ScrollTrigger);
