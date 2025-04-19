@@ -150,27 +150,6 @@ $(window).on('load', function () {
         }
     });
     dayMotion
-        .fromTo(".sc-day .sun-element", {
-            scale: 80,
-            opacity: 0.1,
-        }, {
-            scrollTrigger: {
-                trigger: ".sc-day .sun-group",
-                start: "0% 50%",
-                end: "100% 40%",
-                scrub: true,
-                // markers: true,
-                onUpdate: (e) => {
-                    if (e.progress > 0.8) {
-                        $(".sc-day .sun-element").css("opacity", 0)
-                    } else {
-                        $(".sc-day .sun-element").css("opacity", 1)
-                    }
-                }
-            },
-            scale: 1,
-            opacity: 1,
-        })
         .to(".sc-day .working-group", {
             scrollTrigger: {
                 trigger: ".sc-revolutionize",
@@ -257,6 +236,27 @@ $(window).on('load', function () {
     gsap.matchMedia().add("(min-width: 768px)", function () {
         dayMotion = gsap.timeline({});
         dayMotion
+            .fromTo(".sc-day .sun-element", {
+                scale: 80,
+                opacity: 0.1,
+            }, {
+                scrollTrigger: {
+                    trigger: ".sc-day .sun-group",
+                    start: "0% 50%",
+                    end: "100% 40%",
+                    scrub: true,
+                    // markers: true,
+                    onUpdate: (e) => {
+                        if (e.progress > 0.8) {
+                            $(".sc-day .sun-element").css("opacity", 0)
+                        } else {
+                            $(".sc-day .sun-element").css("opacity", 1)
+                        }
+                    }
+                },
+                scale: 1,
+                opacity: 1,
+            })
             .from(".sc-day .col", {
                 scrollTrigger: {
                     trigger: ".sc-day .working-group",
