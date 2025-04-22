@@ -6,8 +6,14 @@
     top: 0;
     width: 100%;
     z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 2%;
 }
@@ -22,8 +28,14 @@
 
 #header .util {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 15px;
     color: #fff;
@@ -53,7 +65,10 @@
         padding: 1% 2%;
         top: 3%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 1vw;
         border-radius: 14px;
