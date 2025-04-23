@@ -233,7 +233,7 @@ $(window).on('load', function () {
             })
     })
 
-    gsap.matchMedia().add("(min-width: 768px)", function () {
+    gsap.matchMedia().add("(min-width: 1201px)", function () {
         dayMotion = gsap.timeline({});
         dayMotion
             .fromTo(".sc-day .sun-element", {
@@ -267,6 +267,28 @@ $(window).on('load', function () {
                 },
                 y: -10
             })
+    })
+
+    gsap.matchMedia().add("(max-width: 1200px)", function () {
+        gsap.fromTo(".sc-day .sun-element", {
+            scale: 80,
+            opacity: 0.1,
+        }, {
+            scrollTrigger: {
+                trigger: ".sc-day .sun-group",
+                start: "0% 50%",
+                end: "100% 40%",
+                scrub: true,
+                // markers: true,
+                onUpdate: (e) => {
+                    if (e.progress > 0) {
+                        $(".sc-day .sun-element").css("opacity", 1)
+                    }
+                }
+            },
+            scale: 1,
+            opacity: 1,
+        })
     })
 
     gsap.matchMedia().add("(max-width: 767px)", function () {
