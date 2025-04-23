@@ -272,7 +272,7 @@ $(window).on('load', function () {
     gsap.matchMedia().add("(max-width: 1200px)", function () {
         gsap.fromTo(".sc-day .sun-element", {
             scale: 80,
-            opacity: 0.1,
+            opacity: 1,
         }, {
             scrollTrigger: {
                 trigger: ".sc-day .sun-group",
